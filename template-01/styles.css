@@ -1,25 +1,22 @@
 @charset "UTF-8";
 /*
-Theme Name: Template-01 para Servir no Mundo
-Theme URI: https://example.com
-Author: Alexandre Kozoubsky
-Author URI: https://example.com
-Description: 
-Requires at least: 
-Tested up to: 
-Requires PHP: 
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 
-Tags:
-Version: 0.0.1
+* Nome do Tema: Template-01
+* Nome do Arquivo/Template: style.css
+* Número da Versão: 0.0.1
+* Pacote: servir-no-mundo
+* Descrição: Folha de estilo principal.
+* Autor: Alexandre Kozoubsky
+* Data da Criação (dd/mm/yyyy): 06/10/2023
+* Última Atualização  (dd/mm/yyyy): 06/10/2023
+* Notas:
+	- Inclua notas adicionais relevantes, como informações sobre dependências, bibliotecas utilizadas, ou qualquer coisa que possa ser útil para a equipe de desenvolvimento.
+	- Você pode usar este espaço para documentar mudanças significativas feitas na página.
 */
 
 /**
  * Site Structure
  *
  */
-
 
 /**
  * Navigation
