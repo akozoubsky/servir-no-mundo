@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*
+Theme Name: Template-01 para Servir no Mundo
+Theme URI: https://example.com
+Author: Alexandre Kozoubsky
+Author URI: https://example.com
+Description: 
+Requires at least: 
+Tested up to: 
+Requires PHP: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 
+Tags:
+Version: 0.0.1
+*/
+
+/**
+ * Site Structure
+ *
+ */
+
+
+/**
+ * Navigation
+ *
+ */
+
+.navbar-brand {
+    font-weight: 600;
+	color: white;
+}
+ 
+/**
+ * Text
+ *
+ */
+ 
+.display-3 {
+    font-weight: normal !important;
+}
+
+.lead {
+    font-weight: normal;
+}
+
+/**
+ * Links
+ *
+ */
+ 
+.link-secondary {
+	color: #212529 !important;
+}
+
+	.link-secondary:hover {
+		color: #212529 !important;
+	}
+ 
+/**
+ * Buttons
+ *
+ */
+ 
+.btn  {
+    font-weight: 600;
+}
+
+/* Hover effect nos botões */
+.btn:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Sombra ao redor do botão */
+    transition: box-shadow 0.3s ease-in-out; /* Animação suave */
+}
+
+/**
+ * FontAwesome
+ *
+ */
+
+/* Hover effect nos ícones */
+.fas:hover {
+    transform: scale(1.1); /* Aumenta o ícone em 10% */
+    transition: transform 0.3s ease-in-out; /* Animação suave */
+}
+
+/**
+ * Images
+ *
+ */
+ 
+.image-hero img {
+	max-width: 400px;
+	text-align: center;
+	/*
+	width: auto;
+    height: auto;
+	*/
+}
+
+/**
+ * Templates
+ *
+ */
+
+/* ----- Home Page ----- */
+
+.homepage .col-lg-6.mb-5 {
+    /* background-color: #E8F5E9; */ /* Um verde bem claro, quase branco, para dar um toque suave de esperança no background */
+	/* background-color: #CCDFE8; */
+	/* border-radius: 15px; */
+    padding: 30px;
+}
+
+/**
+ * Colors
+ *
+ */
+
+/*
+1. **Paleta de cores**:
+   - 
+   - 
+   - 
+   - 
+   - Cinza Neutro (para contrastes): `#9E9E9E`
+*/
+
+
+/* Menu principal */
+.navbar {
+    /* background-color: #4CAF50; */ /* Verde Esperança */
+	background-color: #a184c3;
+}
+
+.nav-link {
+    color: #FFFFFF; /* Branco */
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+/* Botoes de call to action */
+.btn-primary {
+    background-color: #A184C3;
+    border-color: #A184C3;
+}
+
+.btn-primary:hover {
+    background-color: #80699C; /* Uma tonalidade mais escura */
+    border-color: #80699C;
+}
+
+.btn-secondary {
+    background-color: #2596BE; 
+    border-color: #2596BE;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #1D7898; /* Uma tonalidade mais escura  */
+    border-color: #1D7898;
+    color: white;
+}
+
+/* Icones */
+.fas, .fab {
+    /* color: #9E9E9E; */ /* Cinza Neutro */
+	color: #4F345A;
+}
