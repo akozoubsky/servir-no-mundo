@@ -45,7 +45,11 @@
  * Links
  *
  */
- 
+
+a {
+    transition: color 0.3s ease-in-out;
+}
+
 .link-secondary {
 	color: #212529 !important;
 }

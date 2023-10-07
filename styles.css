@@ -17,35 +17,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/**
- * Responsive typography
- * (576px = 36em)
- * (768px = 48em)
- * (992px = 62em) 
- * (1200px = 75em)
- * (1920px = 120em)
- *
- * @link https://getbootstrap.com/docs/4.1/content/typography/#responsive-typography
- * @link https://websemantics.uk/tools/responsive-font-calculator/
- */
-
-/* 1rem(16px) @ 48rem(768px) increasing to 1.5rem(24px) @ 75rem(1200px) */
-/* Ems strongly recommended on media queries! */
-@media (min-width: 48em) {
-  :root {
-    font-size: calc(1rem + (1.5 - 1) * ((100vw - 48rem) / (75 - 48)));
-    /* Where: calc = min_font_size_in_rem + (max_font_size - min_font_size) * ((100vw - min_viewport_including_rem_unit) / (max_viewport - min_viewport)) */
-
-    /* Safari resize fix */
-    min-height: 0vw;
-  }
+:root {
+	
+	/*
+	Body — Default foreground (color) and background, including components.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	
+	--bs-body-color: #000000;
+	--bs-body-color-rgb: 0,128,0;
+	
+	/*
+	Primary — Main theme color, used for hyperlinks, focus styles, and component and form active states.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	--bs-primary: #A184C3;
+	--bs-primary-rgb: 161,132,195;
+	
+	--bs-link-color: #A184C3;
+	--bs-link-color-rgb: 161,132,195;
+    --bs-link-hover-color: #80699c;
+    --bs-link-hover-color-rgb: 128,105,156;	
+	
+	
+	
+	/*
+	Secondary — Use the color option for lighter text. Use the bg option for dividers and to indicate disabled component states.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	/*
+	--bs-secondary-color:;
+	--bs-secondary-color-rgb:;
+	*/
+	
 }
-/* Prevent scaling beyond this breakpoint */
-@media (min-width: 75em) {
-  :root {
-    font-size: 1.5rem;
-  }
-}
+
+
 
 body {
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -77,7 +84,9 @@ h1 {
  * Links
  *
  */
-
+a {
+    transition: color 0.3s ease-in-out;
+}
 
 /**
  * Buttons
