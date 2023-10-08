@@ -86,18 +86,26 @@ a {
     transition: transform 0.3s ease-in-out; /* Animação suave */
 }
 
+/* Change EM with REM */
+.fa-2x {
+    font-size: 2rem;
+}
+
+.fa-3x {
+    font-size: 3rem;
+}
+
+.fa-4x {
+    font-size: 4rem;
+}
+
 /**
  * Images
  *
  */
  
 .image-hero img {
-	max-width: 400px;
-	text-align: center;
-	/*
-	width: auto;
-    height: auto;
-	*/
+
 }
 
 /**
