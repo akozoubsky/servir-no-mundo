@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-* Nome do Tema: Template-01
+* Nome do Tema: Servir no Mundo - Templates
 * Nome do Arquivo/Template: style.css
-* Número da Versão: 0.0.6
+* Número da Versão: 0.0.7
 * Pacote: servir-no-mundo
 * Descrição: Folha de estilo principal.
 * Autor: Alexandre Kozoubsky
@@ -42,13 +42,13 @@
 	Primary — Main theme color, used for hyperlinks, focus styles, and component and form active states.
 	https://getbootstrap.com/docs/5.3/customize/color/
 	*/
-	--bs-primary: #4CAF50;
-	--bs-primary-rgb: 76,175,80;
+	--bs-primary: #555555;
+	--bs-primary-rgb: 85,85,85;
 	
-	--bs-link-color: #4CAF50;
-	--bs-link-color-rgb: 76,175,80;
-    --bs-link-hover-color: #3C8C40;
-    --bs-link-hover-color-rgb: 60,140,64;
+	--bs-link-color: #555555;
+	--bs-link-color-rgb: 85,85,85;
+    --bs-link-hover-color: #000000;
+    --bs-link-hover-color-rgb: 0,0,0;
 	
 	/*
 	Secondary — Use the color option for lighter text. Use the bg option for dividers and to indicate disabled component states.
