@@ -130,7 +130,8 @@ a {
 /* Menu principal */
 .navbar {
     /* background-color: #4CAF50; */ /* Verde Esperança */
-	background-color: #A184C3;
+	/* background-color: #a184c3; */
+	background-color: #6F42C1;
 }
 
 .navbar-brand {
@@ -154,8 +155,12 @@ a {
 
 /* Botoes de call to action */
 .btn-primary {
+	/*
     background-color: #A184C3;
     border-color: #A184C3;
+	*/
+    background-color: #6F42C1;
+    border-color: #6F42C1;	
 }
 
 .btn-primary:hover {
