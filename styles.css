@@ -58,13 +58,9 @@
 	*/
 }
 
-html {
+html, body  {
 	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 	font-size: 1.125rem;
-}
-
-body {
-    
 }
 
 /**
@@ -88,13 +84,15 @@ body {
  * Links
  *
  */
+ 
 a {
-    transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease;
+	text-underline-offset: 0.15em;
 }
 
-a:hover {
-    font-weight: bold;
-}
+	a:hover {
+		font-weight: bold;
+	}
 
 
 /**
