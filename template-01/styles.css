@@ -13,10 +13,19 @@
 	- Você pode usar este espaço para documentar mudanças significativas feitas na página.
 */
 
+/* Importar a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	font-size: 1.125rem;
+}
+
 /**
  * Site Structure
  *
  */
+ 
 
 /**
  * Navigation
@@ -32,7 +41,7 @@
  *
  */
  
-.display-3 {
+.display-4 {
     font-weight: normal !important;
 }
 
@@ -46,17 +55,10 @@
  */
 
 a {
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
+	text-underline-offset: 0.15em;
 }
 
-.link-secondary {
-	color: #212529 !important;
-}
-
-	.link-secondary:hover {
-		color: #212529 !important;
-	}
- 
 /**
  * Buttons
  *
@@ -129,7 +131,6 @@ a {
 
 /* Menu principal */
 .navbar {
-    /* background-color: #4CAF50; */ /* Verde Esperança */
 	background-color: #A184C3;
 }
 
@@ -148,6 +149,15 @@ a {
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+/* Cores dos links */
+.link-secondary {
+	color: #212529 !important;
+}
+
+	.link-secondary:hover {
+		color: #212529 !important;
+	}
+
 .nav-link:hover {
     color: rgba(255,255,255,1); /* Branco */
 }
@@ -164,28 +174,24 @@ a {
 
 .btn-primary {
     background-color: #A184C3;
-    border-color: #A184C3;
+    border-color: #A184C3;	
 }
 
 .btn-primary:hover {
 	/* Uma tonalidade mais escura */
-	/*
-    background-color: #80699C;
-    border-color: #80699C;
-	*/
     background-color: #58349a;
     border-color: #58349a;	
 }
 
 .btn-secondary {
-    background-color: #aed8e4; 
-    border-color: #aed8e4;
+    background-color: #AED8E4; 
+    border-color: #AED8E4;
 }
 
 .btn-secondary:hover {
 	/* Uma tonalidade mais escura  */
-    background-color: #8bacb6;
-    border-color: #8bacb6;
+    background-color: #8BACB6;
+    border-color: #8BACB6;
 }
 
 /* Icones */
