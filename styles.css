@@ -18,9 +18,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-
-	--bs-body-font-size: 18px;
 	/*
+	--bs-body-font-size: 18px;
+	
 	--bs-body-font-family):;
 	--bs-body-font-size):;
 	--bs-body-font-weight):;
@@ -60,7 +60,9 @@
 	*/
 }
 
-
+html {
+	font-size: 1.25rem;
+}
 
 body {
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
