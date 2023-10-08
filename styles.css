@@ -2,7 +2,7 @@
 /*
 * Nome do Tema: Template-01
 * Nome do Arquivo/Template: style.css
-* Número da Versão: 0.0.5
+* Número da Versão: 0.0.6
 * Pacote: servir-no-mundo
 * Descrição: Folha de estilo principal.
 * Autor: Alexandre Kozoubsky
@@ -18,6 +18,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
+
+	--bs-body-font-size: 18px;
+	/*
+	--bs-body-font-family):;
+	--bs-body-font-size):;
+	--bs-body-font-weight):;
+	--bs-body-line-height):;
+	--bs-body-color):;
+	--bs-body-text-align):;
+	--bs-body-bg):;
+	*/
 	
 	/*
 	Body — Default foreground (color) and background, including components.
@@ -31,15 +42,13 @@
 	Primary — Main theme color, used for hyperlinks, focus styles, and component and form active states.
 	https://getbootstrap.com/docs/5.3/customize/color/
 	*/
-	--bs-primary: #A184C3;
-	--bs-primary-rgb: 161,132,195;
+	--bs-primary: #4CAF50;
+	--bs-primary-rgb: 76,175,80;
 	
-	--bs-link-color: #A184C3;
-	--bs-link-color-rgb: 161,132,195;
-    --bs-link-hover-color: #80699c;
-    --bs-link-hover-color-rgb: 128,105,156;	
-	
-	
+	--bs-link-color: #4CAF50;
+	--bs-link-color-rgb: 76,175,80;
+    --bs-link-hover-color: #3C8C40;
+    --bs-link-hover-color-rgb: 60,140,64;
 	
 	/*
 	Secondary — Use the color option for lighter text. Use the bg option for dividers and to indicate disabled component states.
@@ -49,7 +58,6 @@
 	--bs-secondary-color:;
 	--bs-secondary-color-rgb:;
 	*/
-	
 }
 
 
