@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*
-* Nome do Tema: Template-01
+* Nome do Tema: Template-03
 * Nome do Arquivo/Template: style.css
 * Número da Versão: 0.0.8
 * Pacote: servir-no-mundo
 * Descrição: Folha de estilo principal.
 * Autor: Alexandre Kozoubsky
-* Data da Criação (dd/mm/yyyy): 06/10/2023
-* Última Atualização  (dd/mm/yyyy): 07/10/2023
+* Data da Criação (dd/mm/yyyy): 08/10/2023
+* Última Atualização  (dd/mm/yyyy): 08/10/2023
 * Notas:
 	- Inclua notas adicionais relevantes, como informações sobre dependências, bibliotecas utilizadas, ou qualquer coisa que possa ser útil para a equipe de desenvolvimento.
 	- Você pode usar este espaço para documentar mudanças significativas feitas na página.
@@ -139,7 +139,7 @@ a {
 
 /* Menu principal */
 .navbar {
-	background-color: #A184C3;
+	background-color: #6F42C1;
 }
 
 .navbar-brand {
@@ -181,8 +181,8 @@ a {
 	}
 
 .btn-primary {
-    background-color: #A184C3;
-    border-color: #A184C3;	
+    background-color: #6F42C1;
+    border-color: #6F42C1;	
 }
 
 .btn-primary:hover {
@@ -192,14 +192,14 @@ a {
 }
 
 .btn-secondary {
-    background-color: #AED8E4; 
-    border-color: #AED8E4;
+    background-color: #2596BE; 
+    border-color: #2596BE;
 }
 
 .btn-secondary:hover {
 	/* Uma tonalidade mais escura  */
-    background-color: #8BACB6;
-    border-color: #8BACB6;
+    background-color: #1D7898;
+    border-color: #1D7898;
 }
 
 /* Icones */
