@@ -173,6 +173,10 @@ a {
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+.nav-link:hover {
+    color: rgba(255,255,255,1); /* Branco */
+}
+
 /* Cores dos links */
 .link-secondary {
 	color: #212529 !important;
@@ -181,10 +185,6 @@ a {
 	.link-secondary:hover {
 		color: #212529 !important;
 	}
-
-.nav-link:hover {
-    color: rgba(255,255,255,1); /* Branco */
-}
 
 /* Botoes de call to action */
 
