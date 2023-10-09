@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+/*
+ * Nome do Tema: Template-04
+ * Nome do Arquivo/Template: style.css
+ * Número da Versão: 0.0.8
+ * Pacote: servir-no-mundo
+ * Descrição: Folha de estilo principal.
+ * Autor: Alexandre Kozoubsky
+ * Data da Criação (dd/mm/yyyy): 08/10/2023
+ * Última Atualização  (dd/mm/yyyy): 08/10/2023
+ * Notas:
+ *   - Inclua notas adicionais relevantes, como informações sobre dependências, bibliotecas utilizadas, ou qualquer coisa que possa ser útil para a equipe de desenvolvimento.
+ *   - Você pode usar este espaço para documentar mudanças significativas feitas na página.
+ */
+
+/* Importar a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Definições globais */
+html, body {
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-size: 1.125rem;
+}
+
+/* Estrutura do Site */
+/**
+ * Navigation
+ */
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* para navbar com fundo escuro */
+.navbar-toggler {
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid white !important;
+}
+
+/**
+ * Text
+ */
+.display-4 {
+    font-weight: normal !important;
+}
+
+.lead {
+    font-weight: normal;
+}
+
+/**
+ * Links
+ */
+a {
+    transition: color 0.3s ease;
+    text-underline-offset: 0.15em;
+}
+
+/**
+ * Buttons
+ */
+.btn  {
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out; /* Define a transição para a cor de fundo */
+}
+
+/* Hover effect nos botões */
+.btn:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Sombra ao redor do botão */
+    transition: box-shadow 0.3s ease-in-out; /* Animação suave */
+}
+
+/**
+ * FontAwesome
+ */
+/* Hover effect nos ícones */
+.fas:hover {
+    transform: scale(1.1); /* Aumenta o ícone em 10% */
+    transition: transform 0.3s ease-in-out; /* Animação suave */
+}
+
+/* Change EM with REM */
+.fa-2x {
+    font-size: 2rem;
+}
+
+.fa-3x {
+    font-size: 3rem;
+}
+
+.fa-4x {
+    font-size: 4rem;
+}
+
+/**
+ * Images
+ */
+.image-hero img {
+
+}
+
+/* Templates */
+/* ----- Home Page ----- */
+.homepage .col-lg-6.mb-5 {
+    /* background-color: #E8F5E9; */ /* Um verde bem claro, quase branco, para dar um toque suave de esperança no background */
+    /* background-color: #CCDFE8; */
+    /* border-radius: 15px; */
+    padding: 30px;
+}
+
+/**
+ * Colors
+ */
+/*
+1. **Paleta de cores**:
+   - 
+   - 
+   - 
+   - 
+   - Neutral Gray (for contrasts): #9E9E9E
+*/
+
+/* Menu principal */
+.navbar {
+    background-color: #6F42C1;
+}
+
+.navbar-brand {
+    color: rgba(255,255,255,0.85); /* Branco fraco */
+    transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;    
+}
+
+.navbar-brand:hover {
+    color: rgba(255,255,255,1); /* Branco */
+}
+
+.nav-link, .nav-link:visited {
+    color: rgba(255,255,255,0.85); /* Branco fraco */
+    padding-left: 0.25rem;
+    transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: rgba(255,255,255,1); /* Branco */
+}
+
+/* Cores dos links */
+.link-secondary {
+    color: #212529 !important;
+}
+
+.link-secondary:hover {
+    color: #212529 !important;
+}
+
+/* Botoes de call to action */
+.btn {
+    color: rgba(255,255,255,0.90); /* Branco fraco */
+}
+
+.btn:hover {
+    color: rgba(255,255,255,1); /* Branco */
+}
+
+.btn-primary {
+    background-color: #6F42C1;
+    border-color: #6F42C1;    
+}
+
+.btn-primary:hover {
+    /* Uma tonalidade mais escura */
+    background-color: #58349a;
+    border-color: #58349a;    
+}
+
+.btn-secondary {
+    background-color: #2596BE; 
+    border-color: #2596BE;
+}
+
+.btn-secondary:hover {
+    /* Uma tonalidade mais escura  */
+    background-color: #1D7898;
+    border-color: #1D7898;
+}
+
+/* Icones */
+.fas, .fab {
+    /* color: #9E9E9E; */ /* Cinza Neutro */
+    /* color: #4F345A; */
+}

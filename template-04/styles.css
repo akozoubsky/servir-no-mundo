@@ -1,21 +1,29 @@
 @charset "UTF-8";
-/*
-* Nome do Tema: Template-04
-* Nome do Arquivo/Template: style.css
-* Número da Versão: 0.0.8
-* Pacote: servir-no-mundo
-* Descrição: Folha de estilo principal.
-* Autor: Alexandre Kozoubsky
-* Data da Criação (dd/mm/yyyy): 08/10/2023
-* Última Atualização  (dd/mm/yyyy): 08/10/2023
-* Notas:
-	- Inclua notas adicionais relevantes, como informações sobre dependências, bibliotecas utilizadas, ou qualquer coisa que possa ser útil para a equipe de desenvolvimento.
-	- Você pode usar este espaço para documentar mudanças significativas feitas na página.
-*/
 
-/* Importar a fonte do Google Fonts */
+/*
+ * Theme Name: Template-04
+ * File/Template Name: style.css
+ * Version Number: 0.0.8
+ * Package: servir-no-mundo
+ * Description: Main style sheet.
+ * Author: Alexandre Kozoubsky
+ * Creation Date (dd/mm/yyyy): 08/10/2023
+ * Last Update Date (dd/mm/yyyy): 08/10/2023
+ * Notes:
+ *   - Include additional relevant notes, such as information about dependencies, used libraries, or anything that may be useful for the development team.
+ *   - You can use this space to document significant changes made to the page.
+ */
+
+/**
+ * Fonts
+ */
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/**
+ * Global settings
+ */
 html, body {
 	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 	font-size: 1.125rem;
@@ -23,20 +31,18 @@ html, body {
 
 /**
  * Site Structure
- *
  */
  
 
 /**
  * Navigation
- *
  */
 
 .navbar-brand {
     font-weight: 600;
 }
 
-/* para navbar com fundo escuro */
+/* for navbar with dark background */
 .navbar-toggler {
 	/*
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -52,10 +58,8 @@ html, body {
 	*/
 }
 
-
 /**
  * Text
- *
  */
  
 .display-4 {
@@ -68,7 +72,6 @@ html, body {
 
 /**
  * Links
- *
  */
 
 a {
@@ -78,29 +81,27 @@ a {
 
 /**
  * Buttons
- *
  */
  
 .btn  {
     font-weight: 600;
-	transition: background-color 0.3s ease-in-out; /* Define a transição para a cor de fundo */
+	transition: background-color 0.3s ease-in-out; /* Sets the transition for the background color */
 }
 
 /* Hover effect nos botões */
 .btn:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Sombra ao redor do botão */
-    transition: box-shadow 0.3s ease-in-out; /* Animação suave */
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Shadow around the button */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth animation */
 }
 
 /**
  * FontAwesome
- *
  */
 
 /* Hover effect nos ícones */
 .fas:hover {
-    transform: scale(1.1); /* Aumenta o ícone em 10% */
-    transition: transform 0.3s ease-in-out; /* Animação suave */
+    transform: scale(1.1); /* Increases the icon by 10% */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
 /* Change EM with REM */
@@ -118,7 +119,6 @@ a {
 
 /**
  * Images
- *
  */
  
 .image-hero img {
@@ -127,7 +127,6 @@ a {
 
 /**
  * Templates
- *
  */
 
 /* ----- Home Page ----- */
@@ -141,44 +140,43 @@ a {
 
 /**
  * Colors
- *
  */
 
 /*
-1. **Paleta de cores**:
+1. **Color palette**:
    - 
    - 
    - 
    - 
-   - Cinza Neutro (para contrastes): `#9E9E9E`
+   - Neutral Gray (for contrasts): #9E9E9E
 */
 
 
-/* Menu principal */
+/* Primary Menu */
 .navbar {
 	background-color: #6F42C1;
 }
 
 .navbar-brand {
-    color: rgba(255,255,255,0.85); /* Branco fraco */
+    color: rgba(255,255,255,0.85); /* Light white */
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;	
 }
 
 	.navbar-brand:hover {
-		color: rgba(255,255,255,1); /* Branco */
+		color: rgba(255,255,255,1); /* White */
 	}
 
 .nav-link, .nav-link:visited {
-    color: rgba(255,255,255,0.85); /* Branco fraco */
+    color: rgba(255,255,255,0.85); /* Light white */
 	padding-left: 0.25rem;
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .nav-link:hover, .nav-link:active {
-    color: rgba(255,255,255,1); /* Branco */
+    color: rgba(255,255,255,1); /* White */
 }
 
-/* Cores dos links */
+/* Link colors */
 .link-secondary {
 	color: #212529 !important;
 }
@@ -187,14 +185,14 @@ a {
 		color: #212529 !important;
 	}
 	
-/* Botoes de call to action */
+/* Call to action buttons */
 
 .btn {
-	color: rgba(255,255,255,0.90); /* Branco fraco */
+	color: rgba(255,255,255,0.90); /* Light white */
 }
 
 	.btn:hover {
-		color: rgba(255,255,255,1); /* Branco */
+		color: rgba(255,255,255,1); /* White */
 	}
 
 .btn-primary {
@@ -203,7 +201,7 @@ a {
 }
 
 .btn-primary:hover {
-	/* Uma tonalidade mais escura */
+	/* A darker shade */
     background-color: #58349a;
     border-color: #58349a;	
 }
@@ -214,13 +212,13 @@ a {
 }
 
 .btn-secondary:hover {
-	/* Uma tonalidade mais escura  */
+	/* A darker shade  */
     background-color: #1D7898;
     border-color: #1D7898;
 }
 
-/* Icones */
+/* Icons */
 .fas, .fab {
-    /* color: #9E9E9E; */ /* Cinza Neutro */
+    /* color: #9E9E9E; */ /* Neutral Gray */
 	/* color: #4F345A; */
 }

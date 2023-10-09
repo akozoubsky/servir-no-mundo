@@ -1,24 +1,25 @@
 @charset "UTF-8";
-/*
-* Nome do Tema: Template-01
-* Nome do Arquivo/Template: style.css
-* Número da Versão: 0.0.8
-* Pacote: servir-no-mundo
-* Descrição: Folha de estilo principal.
-* Autor: Alexandre Kozoubsky
-* Data da Criação (dd/mm/yyyy): 06/10/2023
-* Última Atualização  (dd/mm/yyyy): 07/10/2023
-* Notas:
-	- Inclua notas adicionais relevantes, como informações sobre dependências, bibliotecas utilizadas, ou qualquer coisa que possa ser útil para a equipe de desenvolvimento.
-	- Você pode usar este espaço para documentar mudanças significativas feitas na página.
-*/
 
-/* Importar a fonte do Google Fonts */
+/*
+ * Theme Name: Template-01
+ * File/Template Name: style.css
+ * Version Number: 0.0.8
+ * Package: servir-no-mundo
+ * Description: Main style sheet.
+ * Author: Alexandre Kozoubsky
+ * Creation Date (dd/mm/yyyy): 06/10/2023
+ * Last Update Date (dd/mm/yyyy): 09/10/2023
+ * Notes:
+ *   - Include additional relevant notes, such as information about dependencies, libraries used, or anything that may be useful for the development team.
+ *   - You can use this space to document significant changes made to the page.
+ */
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html, body {
-	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-	font-size: 1.125rem;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-size: 1.125rem;
 }
 
 /**
@@ -36,7 +37,7 @@ html, body {
     font-weight: 600;
 }
 
-/* para navbar com fundo escuro */
+/* for navbar with a dark background */
 .navbar-toggler {
 	/*
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -82,13 +83,13 @@ a {
  
 .btn  {
     font-weight: 600;
-	transition: background-color 0.3s ease-in-out; /* Define a transição para a cor de fundo */
+	transition: background-color 0.3s ease-in-out; /* Define transition for background color */
 }
 
-/* Hover effect nos botões */
+/* Hover effect on buttons */
 .btn:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Sombra ao redor do botão */
-    transition: box-shadow 0.3s ease-in-out; /* Animação suave */
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Shadow around the button */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth animation */
 }
 
 /**
@@ -96,10 +97,10 @@ a {
  *
  */
 
-/* Hover effect nos ícones */
+/* Hover effect on icons */
 .fas:hover {
-    transform: scale(1.1); /* Aumenta o ícone em 10% */
-    transition: transform 0.3s ease-in-out; /* Animação suave */
+    transform: scale(1.1); /* Increase icon size by 10% */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
 /* Change EM with REM */
@@ -132,7 +133,7 @@ a {
 /* ----- Home Page ----- */
 
 .homepage .col-lg-6.mb-5 {
-    /* background-color: #E8F5E9; */ /* Um verde bem claro, quase branco, para dar um toque suave de esperança no background */
+    /* background-color: #E8F5E9; */ /* A very light green, almost white, to give a subtle touch of hope in the background */
 	/* background-color: #CCDFE8; */
 	/* border-radius: 15px; */
     padding: 30px;
@@ -144,56 +145,55 @@ a {
  */
 
 /*
-1. **Paleta de cores**:
+1. **Color Palette**:
    - 
    - 
    - 
    - 
-   - Cinza Neutro (para contrastes): `#9E9E9E`
+   - Neutral Gray (for contrasts): `#9E9E9E`
 */
 
 
-/* Menu principal */
+/* Main Menu */
 .navbar {
 	background-color: #A184C3;
 }
 
 .navbar-brand {
-    color: rgba(255,255,255,0.85); /* Branco fraco */
+    color: rgba(255,255,255,0.85); /* Light white */
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;	
 }
 
 	.navbar-brand:hover {
-		color: rgba(255,255,255,1); /* Branco */
+		color: rgba(255,255,255,1); /* White */
 	}
 
 .nav-link, .nav-link:visited {
-    color: rgba(255,255,255,0.85); /* Branco fraco */
+    color: rgba(255,255,255,0.85); /* Light white */
 	padding-left: 0.25rem;
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .nav-link:hover, .nav-link:active {
-    color: rgba(255,255,255,1); /* Branco */
+    color: rgba(255,255,255,1); /* White */
 }
 
-/* Cores dos links */
+/* Link Colors */
 .link-secondary {
-	color: #212529 !important;
+    color: #212529 !important;
 }
 
 	.link-secondary:hover {
 		color: #212529 !important;
 	}
 
-/* Botoes de call to action */
-
+/* Call to Action Buttons */
 .btn {
-	color: rgba(255,255,255,0.90); /* Branco fraco */
+    color: rgba(255,255,255,0.90); /* Light white */
 }
 
 	.btn:hover {
-		color: rgba(255,255,255,1); /* Branco */
+		color: rgba(255,255,255,1); /* White */
 	}
 
 .btn-primary {
@@ -202,7 +202,7 @@ a {
 }
 
 .btn-primary:hover {
-	/* Uma tonalidade mais escura */
+	/* A darker shade */
     background-color: #58349a;
     border-color: #58349a;	
 }
@@ -213,13 +213,12 @@ a {
 }
 
 .btn-secondary:hover {
-	/* Uma tonalidade mais escura  */
+	/* A darker shade  */
     background-color: #8BACB6;
     border-color: #8BACB6;
 }
 
-/* Icones */
+/* Icons */
 .fas, .fab {
-    /* color: #9E9E9E; */ /* Cinza Neutro */
-	/* color: #4F345A; */
-}
+    /* color: #9E9E9E; */ /* Neutral Gray */
+	/* color

@@ -1,66 +1,67 @@
 @charset "UTF-8";
-/*
-* Nome do Tema: Servir no Mundo - Templates
-* Nome do Arquivo/Template: style.css
-* Número da Versão: 0.0.8
-* Pacote: servir-no-mundo
-* Descrição: Folha de estilo principal.
-* Autor: Alexandre Kozoubsky
-* Data da Criação (dd/mm/yyyy): 06/10/2023
-* Última Atualização  (dd/mm/yyyy): 06/10/2023
-* Notas:
-	- Inclua notas adicionais relevantes, como informações sobre dependências, bibliotecas utilizadas, ou qualquer coisa que possa ser útil para a equipe de desenvolvimento.
-	- Você pode usar este espaço para documentar mudanças significativas feitas na página.
-*/
 
-/* Importar a fonte do Google Fonts */
+/*
+ * Theme Name: Serve the World - Templates
+ * File/Template Name: style.css
+ * Version Number: 0.0.8
+ * Package: servir-no-mundo
+ * Description: Main style sheet.
+ * Author: Alexandre Kozoubsky
+ * Creation Date (dd/mm/yyyy): 06/10/2023
+ * Last Update Date (dd/mm/yyyy): 09/10/2023
+ * Notes:
+ *   - Include additional relevant notes, such as information about dependencies, libraries used, or anything that may be useful for the development team.
+ *   - You can use this space to document significant changes made to the page.
+ */
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-	/*
-	--bs-body-font-size: 18px;
-	--bs-body-font-family):;
-	--bs-body-font-size):;
-	--bs-body-font-weight):;
-	--bs-body-line-height):;
-	--bs-body-color):;
-	--bs-body-text-align):;
-	--bs-body-bg):;
-	*/
-	
-	/*
-	Body — Default foreground (color) and background, including components.
-	https://getbootstrap.com/docs/5.3/customize/color/
-	*/
-	
-	--bs-body-color: #000000;
-	--bs-body-color-rgb: 0,128,0;
-	
-	/*
-	Primary — Main theme color, used for hyperlinks, focus styles, and component and form active states.
-	https://getbootstrap.com/docs/5.3/customize/color/
-	*/
-	--bs-primary: #555555;
-	--bs-primary-rgb: 85,85,85;
-	
-	--bs-link-color: #555555;
-	--bs-link-color-rgb: 85,85,85;
+    /*
+    --bs-body-font-size: 18px;
+    --bs-body-font-family: ;
+    --bs-body-font-size: ;
+    --bs-body-font-weight: ;
+    --bs-body-line-height: ;
+    --bs-body-color: ;
+    --bs-body-text-align: ;
+    --bs-body-bg: ;
+    */
+
+    /*
+    Body — Default foreground (color) and background, including components.
+    https://getbootstrap.com/docs/5.3/customize/color/
+    */
+
+    --bs-body-color: #000000;
+    --bs-body-color-rgb: 0, 128, 0;
+
+    /*
+    Primary — Main theme color, used for hyperlinks, focus styles, and component and form active states.
+    https://getbootstrap.com/docs/5.3/customize/color/
+    */
+    --bs-primary: #555555;
+    --bs-primary-rgb: 85, 85, 85;
+
+    --bs-link-color: #555555;
+    --bs-link-color-rgb: 85, 85, 85;
     --bs-link-hover-color: #000000;
-    --bs-link-hover-color-rgb: 0,0,0;
-	
-	/*
-	Secondary — Use the color option for lighter text. Use the bg option for dividers and to indicate disabled component states.
-	https://getbootstrap.com/docs/5.3/customize/color/
-	*/
-	/*
-	--bs-secondary-color:;
-	--bs-secondary-color-rgb:;
-	*/
+    --bs-link-hover-color-rgb: 0, 0, 0;
+
+    /*
+    Secondary — Use the color option for lighter text. Use the bg option for dividers and to indicate disabled component states.
+    https://getbootstrap.com/docs/5.3/customize/color/
+    */
+    /*
+    --bs-secondary-color:;
+    --bs-secondary-color-rgb:;
+    */
 }
 
-html, body  {
-	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-	font-size: 1.125rem;
+html, body {
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-size: 1.125rem;
 }
 
 /**
@@ -73,33 +74,33 @@ html, body  {
  *
  */
 
- 
+
 /**
  * Text
  *
  */
- 
+
 
 /**
  * Links
  *
  */
- 
+
 a {
-	transition: color 0.3s ease;
-	text-underline-offset: 0.15em;
+    transition: color 0.3s ease;
+    text-underline-offset: 0.15em;
 }
 
-	a:hover {
-		font-weight: bold;
-	}
+a:hover {
+    font-weight: bold;
+}
 
 
 /**
  * Buttons
  *
  */
- 
+
 
 /**
  * FontAwesome
@@ -110,7 +111,7 @@ a {
  * Images
  *
  */
- 
+
 
 /**
  * Templates
@@ -126,7 +127,7 @@ a {
  */
 
 /*
-1. **Paleta de cores**:
+1. **Color Palette**:
    - 
    - 
    - 
@@ -134,7 +135,7 @@ a {
 */
 
 
-/* Menu principal */
+/* Main Menu */
 
 
-/* Icones */
+/* Icons */
