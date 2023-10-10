@@ -92,16 +92,17 @@ a {
     transition: box-shadow 0.3s ease-in-out; /* Smooth animation */
 }
 
-/* Lists */
+/**
+ * Lists
+ */
 
-li {
-	/**
-	 * alexk - inclui
-	 * Acertar altura da linha e
-	 * conteudo largo que quebra linha nos widgets (padding para os elementos dos widgets).
-	 */	
-	padding: 0.187em 0;
+ul:not(.navbar-nav), ol:not(.navbar-nav) {
+	line-height: 1.65;
 }
+
+li:not(.nav-item) {
+	margin-bottom: 0.5em;
+} 
 
 /**
  * FontAwesome

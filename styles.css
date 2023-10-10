@@ -101,12 +101,15 @@ a:hover {
  *
  */
  
-/* Lists */
-ul, ol {
+/**
+ * Lists
+ */
+
+ul:not(.navbar-nav), ol:not(.navbar-nav) {
 	line-height: 1.65;
 }
 
-li {
+li:not(.nav-item) {
 	margin-bottom: 0.5em;
 } 
 
