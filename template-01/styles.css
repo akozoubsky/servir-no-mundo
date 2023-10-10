@@ -15,11 +15,11 @@
  */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html, body {
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.125em;
 }
 
 /**
@@ -34,7 +34,7 @@ html, body {
  */
 
 .navbar-brand {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* for navbar with a dark background */
@@ -82,7 +82,7 @@ a {
  */
  
 .btn  {
-    font-weight: 600;
+    font-weight: 500;
 	transition: background-color 0.3s ease-in-out; /* Define transition for background color */
 }
 
@@ -92,28 +92,39 @@ a {
     transition: box-shadow 0.3s ease-in-out; /* Smooth animation */
 }
 
+/* Lists */
+
+li {
+	/**
+	 * alexk - inclui
+	 * Acertar altura da linha e
+	 * conteudo largo que quebra linha nos widgets (padding para os elementos dos widgets).
+	 */	
+	padding: 0.187em 0;
+}
+
 /**
  * FontAwesome
  *
  */
 
 /* Hover effect on icons */
-.fas:hover {
-    transform: scale(1.1); /* Increase icon size by 10% */
+.fas:hover,
+.fab:hover {
+    transform: scale(1.1); /* Increase the icon size by 10% */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
-/* Change EM with REM */
 .fa-2x {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .fa-3x {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .fa-4x {
-    font-size: 4rem;
+    font-size: 4em;
 }
 
 /**
@@ -159,18 +170,20 @@ a {
 	background-color: #A184C3;
 }
 
-.navbar-brand {
+.navbar-brand,
+.navbar-brand:visited {
     color: rgba(255,255,255,0.85); /* Light white */
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;	
 }
 
-	.navbar-brand:hover {
+	.navbar-brand:hover,
+	.navbar-brand:active {
 		color: rgba(255,255,255,1); /* White */
 	}
 
 .nav-link, .nav-link:visited {
     color: rgba(255,255,255,0.85); /* Light white */
-	padding-left: 0.25rem;
+	padding-left: 0.25em;
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
