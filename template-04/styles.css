@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*
  * Theme Name: Template-04
  * File/Template Name: style.css
@@ -77,6 +76,10 @@ html, body {
 a {
     transition: color 0.3s ease;
 	text-underline-offset: 0.15em;
+}
+
+a.link-secondary h2 {
+	font-size: 1em;
 }
 
 /**
