@@ -2,7 +2,7 @@
 /*
  * Theme Name: Template-04
  * File/Template Name: style.css
- * Version Number: 0.0.8
+ * Version Number: 0.0.9
  * Package: servir-no-mundo
  * Description: Main style sheet.
  * Author: Alexandre Kozoubsky
@@ -11,6 +11,11 @@
  * Notes:
  *   - Include additional relevant notes, such as information about dependencies, used libraries, or anything that may be useful for the development team.
  *   - You can use this space to document significant changes made to the page.
+ * @link https://getbootstrap.com/docs/5.3/customize/css-variables/
+ * @link https://getbootstrap.com/docs/5.3/utilities/background/
+ * @link https://getbootstrap.com/docs/5.3/utilities/text/
+ * @link https://getbootstrap.com/docs/5.3/components/buttons/
+ * @link https://getbootstrap.com/docs/5.3/customize/color/
  */
 
 /**
@@ -20,18 +25,66 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root,
+[data-bs-theme=light] {
+	/* Fonts */
+	--bs-font-sans-serif: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--bs-body-font-family: var(--bs-font-sans-serif);
+	--bs-body-font-size: 1.125rem;
+
+	/* Base colors */
+	--bs-primary: #7a52a8;
+	--bs-primary-rgb: 122,82,168;
+	--bs-secondary-color: #2596BE;
+	--bs-secondary-color-rgb: 37,150,190;
+	--bs-body-color: #333;
+	--bs-body-color-rgb: 51,51,51;
+	--bs-body-bg: #f8f9fa;
+	--bs-body-bg-rgb: 248,249,250;
+
+	/* Links */
+	--bs-link-color: var(--bs-primary);
+	--bs-link-color-rgb: var(--bs-primary-rgb);
+	--bs-link-hover-color: #694294; /* Uma variação mais escura da cor primária */
+	--bs-link-hover-color-rgb: 105, 66, 148;
+
+	/* Adaptation of other colors to create a differentiated palette */
+	--bs-blue: #007BFF;
+	--bs-indigo: #4B0082;
+	--bs-purple: var(--bs-primary);
+	--bs-pink: #FF1493;
+	--bs-red: #FF0000;
+	--bs-orange: #FFA500;
+	--bs-yellow: #FFFF00;
+	--bs-green: #008000;
+	--bs-teal: #20B2AA;
+	--bs-cyan: #00CED1;
+	--bs-black: #000;
+	--bs-white: #fff;
+	--bs-gray: #808080;
+	--bs-gray-dark: #A9A9A9;
+
+	/* Other colors remain the same. */
+	/* Remaining properties remain the same. */	
+}
+
+
 /**
  * Global settings
  */
+
 html, body {
-	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-	font-size: 1.125em;
+	font-family: var(--bs-font-sans-serif);
+	font-size: var(--bs-body-font-size);
 }
 
 /**
  * Site Structure
  */
  
+.container-max-width {
+    max-width: 992px; /* Tamanho máximo para telas maiores */
+} 
 
 /**
  * Navigation
@@ -43,31 +96,14 @@ html, body {
 
 /* for navbar with dark background */
 .navbar-toggler {
-	/*
-    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-    font-size: var(--bs-navbar-toggler-font-size);
-    line-height: 1;
-	*/
     color: white;
     background-color: transparent;
     border: 0.5px solid white !important;
-	/*
-    border-radius: var(--bs-navbar-toggler-border-radius);
-    transition: var(--bs-navbar-toggler-transition);
-	*/
 }
 
 /**
  * Text
  */
- 
-.display-4 {
-    font-weight: normal !important;
-}
-
-.lead {
-    font-weight: normal;
-}
 
 /**
  * Links
@@ -75,11 +111,7 @@ html, body {
 
 a {
     transition: color 0.3s ease;
-	text-underline-offset: 0.15em;
-}
-
-a.link-secondary h2 {
-	font-size: 1em;
+	text-underline-offset: 0.15rem;
 }
 
 /**
@@ -91,12 +123,6 @@ a.link-secondary h2 {
 	transition: background-color 0.3s ease-in-out; /* Sets the transition for the background color */
 }
 
-/* Hover effect nos botões */
-.btn:hover {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Shadow around the button */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth animation */
-}
-
 /**
  * Lists
  */
@@ -106,7 +132,7 @@ ul:not(.navbar-nav), ol:not(.navbar-nav) {
 }
 
 li:not(.nav-item) {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 } 
 
 /**
@@ -120,25 +146,9 @@ li:not(.nav-item) {
     transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
-.fa-2x {
-    font-size: 2em;
-}
-
-.fa-3x {
-    font-size: 3em;
-}
-
-.fa-4x {
-    font-size: 4em;
-}
-
 /**
  * Images
  */
- 
-.image-hero img {
-
-}
 
 /**
  * Templates
@@ -147,9 +157,6 @@ li:not(.nav-item) {
 /* ----- Home Page ----- */
 
 .homepage .col-lg-6.mb-5 {
-    /* background-color: #E8F5E9; */ /* Um verde bem claro, quase branco, para dar um toque suave de esperança no background */
-	/* background-color: #CCDFE8; */
-	/* border-radius: 15px; */
     padding: 30px;
 }
 
@@ -169,7 +176,7 @@ li:not(.nav-item) {
 
 /* Primary Menu */
 .navbar {
-	background-color: #7a52a8;
+	background-color: var(--bs-primary);
 }
 
 .navbar-brand,
@@ -185,7 +192,7 @@ li:not(.nav-item) {
 
 .nav-link, .nav-link:visited {
     color: rgba(255,255,255,0.85); /* Light white */
-	padding-left: 0.25em;
+	padding-left: 0.25rem;
     transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
@@ -194,48 +201,63 @@ li:not(.nav-item) {
 }
 
 /* Link colors */
-.link-secondary {
-	color: #212529 !important;
-}
 
-	.link-secondary:hover {
-		color: #212529 !important;
-	}
-	
-/* Call to action buttons */
-
-.btn {
-	color: rgba(255,255,255,0.90); /* Light white */
-}
-
-	.btn:hover {
-		color: rgba(255,255,255,1); /* White */
-	}
+/* Buttons */
 
 .btn-primary {
-    background-color: #7a52a8;
-    border-color: #614186;	
+  color: #fff;
+  background-color: #7a52a8;
+  border-color: #6b4790;
 }
 
 .btn-primary:hover {
-	/* A darker shade */
-    background-color: #614186;
-    border-color: #493164;	
+  color: #fff;
+  background-color: #694294;
+  border-color: #5d3c7e;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(122, 82, 168, 0.5);
+}
+
+.btn-primary:active {
+  color: #fff;
+  background-color: #5d3c7e;
+  border-color: #523473;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #7a52a8;
+  border-color: #6b4790;
 }
 
 .btn-secondary {
-    background-color: #2596BE; 
-    border-color: #1d7898;
+  color: #fff;
+  background-color: #2596BE;
+  border-color: #1f819c;
 }
 
 .btn-secondary:hover {
-	/* A darker shade  */
-    background-color: #1d7898;
-    border-color: #196985;
+  color: #fff;
+  background-color: #2189a8;
+  border-color: #1d7f97;
 }
 
-/* Icons */
-.fas, .fab {
-    /* color: #9E9E9E; */ /* Neutral Gray */
-	/* color: #4F345A; */
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(37, 150, 190, 0.5);
+}
+
+.btn-secondary:active {
+  color: #fff;
+  background-color: #1d7f97;
+  border-color: #1a7585;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-secondary:disabled {
+  color: #fff;
+  background-color: #2596BE;
+  border-color: #1f819c;
 }

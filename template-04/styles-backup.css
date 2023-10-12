@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/*
+ * Theme Name: Template-04
+ * File/Template Name: style.css
+ * Version Number: 0.0.8
+ * Package: servir-no-mundo
+ * Description: Main style sheet.
+ * Author: Alexandre Kozoubsky
+ * Creation Date (dd/mm/yyyy): 08/10/2023
+ * Last Update Date (dd/mm/yyyy): 08/10/2023
+ * Notes:
+ *   - Include additional relevant notes, such as information about dependencies, used libraries, or anything that may be useful for the development team.
+ *   - You can use this space to document significant changes made to the page.
+ * @link : https://getbootstrap.com/docs/5.3/customize/css-variables/
+ */
+
+/**
+ * Fonts
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root,
+[data-bs-theme=light] {
+	
+	/* Font */
+	--sm-font-sans-serif: 'Roboto','Roboto Slab',system-ui,-apple-system,serif;
+	--sm-body-font-family: var(--sm-font-sans-serif);
+	--sm-body-font-size: 1.125em;
+	
+	/* 	Body — Default foreground (color) and background, including components.
+	https://getbootstrap.com/docs/5.3/customize/color/ */
+	--sm-body-color: #333;
+	--sm-body-color-rgb: 51,51,51;
+	--sm-body-bg: #f8f9fa;
+	--sm-body-bg-rgb: 248,249,250;
+	
+	/*
+	Secondary — Use the color option for lighter text. Use the bg option for dividers and to indicate disabled component states.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	/*
+	--sm-secondary-color: #5b5b5b;
+	--sm-secondary-color-rgb: 91,91,91;
+	*/
+	
+	--sm-secondary-color: #2596BE;
+	--sm-secondary-color-rgb: 37,150,190;
+	
+	/* Tertiary — Use the color option for even lighter text. Use the bg option to style backgrounds for hover states, accents, and wells.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	--sm-tertiary-color: #848484;
+	--sm-tertiary-color-rgb: 132,132,132;
+
+	/* Emphasis — For higher contrast text. Not applicable for backgrounds.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	--sm-emphasis-color: #282828;
+	--sm-emphasis-color-rgb: 40,40,40;	
+	
+	/* Border — For component borders, dividers, and rules. Use --sm-border-color-translucent to blend with backgrounds with an rgba() value.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	--sm-border-color: #d6d6d6;
+	--sm-border-color-rgb: 214,214,214;	
+	
+	/*
+	Primary — Main theme color, used for hyperlinks, focus styles, and component and form active states.
+	https://getbootstrap.com/docs/5.3/customize/color/
+	*/
+	--sm-primary: #7a52a8;
+	--sm-primary-rgb: 122,82,168;
+	--sm-primary-bg-subtle: #bca8d3;
+	--sm-primary-border-subtle: #a185c2;
+	--sm-primary-text-emphasis: #000;
+	
+	/* Link color  */
+	--sm-link-color: var(--sm-primary);
+	--sm-link-color-rgb: var(--sm-primary-rgb);
+	
+	/* Buttons - default */
+    --sm-btn-color: var(--sm-body-color);
+	--sm-btn-font-weight: 500;
+    --sm-btn-bg: var(--sm-body-bg);
+    --sm-btn-border-color: transparent;
+	
+	--sm-btn-hover-color: var(--sm-btn-color);
+	--sm-btn-hover-border-color: transparent;
+	--sm-btn-hover-bg: var(--sm-body-bg);
+	
+	/* Buttons - primary */
+	--sm-btn-primary-bg: var(--sm-primary);
+	--sm-btn-primary-border-color: #614186;
+	
+	--sm-btn-primary-hover-bg: #614186;
+	--sm-btn-primary-hover-border-color: #493164;
+	
+    --sm-btn-primary-active-color: var(--sm-body-color);
+    --sm-btn-primary-active-bg: var(--sm-btn-primary-hover-bg);
+    --sm-btn-primary-active-border-color: var(--sm-btn-primary-hover-border-color);
+    --sm-btn-primary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);	
+	
+	/* Buttons - secondary */
+	--sm-btn-secondary-bg: var(--sm-secondary-color);
+	--sm-btn-secondary-border-color: #1d7898;
+	
+	--sm-btn-secondary-hover-bg: #1d7898;
+	--sm-btn-secondary-hover-border-color: #196985;	
+	
+    --sm-btn-secondary-active-color: var(--sm-body-color);
+    --sm-btn-secondary-active-bg: var(--sm-btn-secondary-hover-bg);
+    --sm-btn-secondary-active-border-color: var(--sm-btn-secondary-hover-border-color);
+    --sm-btn-secondary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);	
+	
+	/* Colors  */
+	--sm-white: #fff;
+
+	/* Other colors remain the same. */
+
+	/* Remaining properties remain the same. */	
+}
+
+/**
+ * Global settings
+ */
+
+html, body {
+	font-family: var(--sm-body-font-family);
+	font-size: var(--sm-body-font-size);
+}
+
+/**
+ * Site Structure
+ */
+ 
+
+/**
+ * Navigation
+ */
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+/* for navbar with dark background */
+.navbar-toggler {
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid white !important;
+}
+
+/**
+ * Text
+ */
+ 
+.display-4 {
+    /* font-weight: normal !important; */
+}
+
+/*
+.lead {
+    font-weight: normal;
+}
+*/
+
+
+/**
+ * Links
+ */
+
+a {
+    transition: color 0.3s ease;
+	text-underline-offset: 0.15em;
+}
+/*
+a.link-secondary h2 {
+	font-size: 1em;
+}
+*/
+
+/**
+ * Buttons
+ */
+ 
+.btn  {
+    font-weight: var(--sm-btn-font-weight);
+	transition: background-color 0.3s ease-in-out; /* Sets the transition for the background color */
+}
+
+/**
+ * Lists
+ */
+
+ul:not(.navbar-nav), ol:not(.navbar-nav) {
+	line-height: 1.65;
+}
+
+li:not(.nav-item) {
+	margin-bottom: 0.5em;
+} 
+
+/**
+ * FontAwesome
+ */
+
+/* Hover effect on icons */
+.fas:hover,
+.fab:hover {
+    transform: scale(1.1); /* Increase the icon size by 10% */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+/**
+ * Images
+ */
+ 
+.image-hero img {
+
+}
+
+/**
+ * Templates
+ */
+
+/* ----- Home Page ----- */
+
+.homepage .col-lg-6.mb-5 {
+    /* background-color: #E8F5E9; */ /* Um verde bem claro, quase branco, para dar um toque suave de esperança no background */
+	/* background-color: #CCDFE8; */
+	/* border-radius: 15px; */
+    padding: 30px;
+}
+
+/**
+ * Colors
+ */
+
+/*
+1. **Color palette**:
+   - 
+   - 
+   - 
+   - 
+   - Neutral Gray (for contrasts): #9E9E9E
+*/
+
+
+/* Primary Menu */
+.navbar {
+	background-color: var(--sm-primary);
+}
+
+.navbar-brand,
+.navbar-brand:visited {
+    color: rgba(255,255,255,0.85); /* Light white */
+    transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;	
+}
+
+	.navbar-brand:hover,
+	.navbar-brand:active	{
+		color: rgba(255,255,255,1); /* White */
+	}
+
+.nav-link, .nav-link:visited {
+    color: rgba(255,255,255,0.85); /* Light white */
+	padding-left: 0.25em;
+    transition: color .3s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: rgba(255,255,255,1); /* White */
+}
+
+/* Link colors */
+/*
+.link-secondary {
+	color: #212529 !important;
+		--sm-secondary-color: #2596BE;
+	--sm-secondary-color-rgb: 37,150,190;
+}
+
+	.link-secondary:hover {
+		color: #212529 !important;
+	}
+	*/
+/* Buttons */
+
+.btn {
+	/* A classe .btn por si só fornece um estilo de botão padrão, que geralmente é um botão com fundo branco e texto escuro. */
+	color: var(--sm-btn-color);
+	background-color: var(--sm-btn-bg);
+	border-color: var(--sm-btn-border-color);
+}
+
+.btn:hover {
+	color: var(--sm-btn-hover-color);
+	background-color: var(--sm-btn-hover-bg);
+	border-color: var(--sm-btn-hover-border-color);
+}
+
+.btn-primary {
+	color: var(--sm-body-bg);
+    background-color: var(--sm-btn-primary-bg);
+    border-color: var(--sm-btn-primary-border-color);
+}
+
+.btn-primary:hover {
+	color: var(--sm-body-bg);
+    background-color: var(--sm-btn-primary-hover-bg);
+    border-color: var(--sm-btn-primary-hover-border-color);
+}
+
+.btn-primary:active {
+	color: var(--sm-btn-primary-active-color);
+    background-color: var(--sm-btn-primary-active-bg);
+    border-color: var(--sm-btn-primary-active-border-color);
+}
+
+.btn-secondary {
+	color: var(--sm-body-bg);
+    background-color: var(--sm-btn-secondary-bg);
+    border-color: var(--sm-btn-secondary-border-color);
+}
+
+.btn-secondary:hover {
+	color: var(--sm-body-bg);
+    background-color: var(--sm-btn-secondary-hover-bg);
+    border-color: var(--sm-btn-secondary-hover-border-color);
+}
+
+.btn-secondary:active {
+	color: var(--sm-body-bg);
+    background-color: var(--sm-btn-secondary-hover-bg);
+    border-color: var(--sm-btn-secondary-hover-border-color);
+}
+
+/* pendencia */
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+	color: var(--bs-btn-disabled-color);
+	pointer-events: none;
+	background-color: var(--bs-btn-disabled-bg);
+	border-color: var(--bs-btn-disabled-border-color);
+	opacity: var(--bs-btn-disabled-opacity);
+}
+
+/* Hover effect nos botões */
+.btn-primary:hover,
+.btn-secondary:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1); /* Shadow around the button */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Icons */
+.fas, .fab {
+    /* color: #9E9E9E; */ /* Neutral Gray */
+	/* color: #4F345A; */
+}
