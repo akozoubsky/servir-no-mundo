@@ -47,8 +47,8 @@
 	/* Links */
 	--bs-link-color: var(--bs-primary);
 	--bs-link-color-rgb: var(--bs-primary-rgb);
-	--bs-link-hover-color: #694294; /* Uma variação mais escura da cor primária */
-	--bs-link-hover-color-rgb: 105, 66, 148;
+	--bs-link-hover-color: #493164; /* A darker variation of the primary color */
+	--bs-link-hover-color-rgb: 73,49,100;
 
 	/* Adaptation of other colors to create a differentiated palette */
 	--bs-blue: #007BFF;
