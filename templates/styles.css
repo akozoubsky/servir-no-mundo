@@ -11,8 +11,14 @@
  * Notes:
  *   - Include additional relevant notes, such as information about dependencies, libraries used, or anything that may be useful for the development team.
  *   - You can use this space to document significant changes made to the page.
+ *
+ * @link https://getbootstrap.com/docs/5.3/utilities/background/
+ * @link https://getbootstrap.com/docs/5.3/utilities/text/
+ * @link https://getbootstrap.com/docs/5.3/utilities/colors/
+ * @link https://getbootstrap.com/docs/5.3/components/buttons/
+ * @link https://getbootstrap.com/docs/5.3/customize/css-variables/ 
+ * @link https://getbootstrap.com/docs/5.3/customize/color/
  */
-
 
 /**
  * Fonts
@@ -84,31 +90,37 @@ html, body {
 
 /**
  * Navigation
- *
  */
 
 
 /**
  * Text
- *
  */
-
 
 /**
  * Links
- *
  */
 
 a {
     transition: color 0.3s ease;
-    text-underline-offset: 0.15em;
+    text-decoration:none;
+    cursor:pointer;
 }
+
+	a:hover{
+		text-decoration:underline;
+		text-underline-offset: 0.15em;
+	}
 
 /**
  * Buttons
- *
  */
  
+.btn  {
+    font-weight: 500;
+	transition: background-color 0.3s ease-in-out; /* Sets the transition for the background color */
+}
+
 /**
  * Lists
  */
@@ -118,31 +130,25 @@ ul:not(.navbar-nav), ol:not(.navbar-nav) {
 }
 
 li:not(.nav-item) {
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 } 
 
 /**
  * FontAwesome
- *
  */
 
 /**
  * Images
- *
  */
-
 
 /**
  * Templates
- *
  */
 
 /* ----- Home Page ----- */
 
-
 /**
  * Colors
- *
  */
 
 /*

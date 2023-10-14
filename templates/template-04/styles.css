@@ -9,7 +9,7 @@
  * Creation Date (dd/mm/yyyy): 08/10/2023
  * Last Update Date (dd/mm/yyyy): 08/10/2023
  * Notes:
- *   - Include additional relevant notes, such as information about dependencies, used libraries, or anything that may be useful for the development team.
+ *   - Include additional relevant notes, such as information about dependencies, libraries used, or anything that may be useful for the development team.
  *   - You can use this space to document significant changes made to the page.
  *
  * @link https://getbootstrap.com/docs/5.3/utilities/background/
@@ -86,7 +86,7 @@ html, body {
  
 .container-max-width {
     max-width: 992px; /* Tamanho máximo para telas maiores */
-} 
+}
 
 /**
  * Navigation
@@ -113,8 +113,14 @@ html, body {
 
 a {
     transition: color 0.3s ease;
-	text-underline-offset: 0.15rem;
+    text-decoration:none;
+    cursor:pointer;
 }
+
+	a:hover{
+		text-decoration:underline;
+		text-underline-offset: 0.15em;
+	}
 
 /**
  * Buttons
