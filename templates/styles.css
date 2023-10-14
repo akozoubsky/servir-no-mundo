@@ -107,7 +107,7 @@ a {
     cursor:pointer;
 }
 
-	a:hover{
+	a:hover:not(.btn){
 		text-decoration:underline;
 		text-underline-offset: 0.15em;
 	}
