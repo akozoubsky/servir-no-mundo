@@ -117,10 +117,15 @@ a {
     cursor:pointer;
 }
 
-	a:hover:not(.btn){
+	a:hover:not(.btn) {
 		text-decoration:underline;
 		text-underline-offset: 0.15em;
 	}
+
+	.navbar a:hover {
+		text-decoration:none;
+	}	
+
 
 /**
  * Buttons
